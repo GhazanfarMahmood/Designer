@@ -1,0 +1,96 @@
+.project-box{
+    margin: 0 6.25rem;
+    margin-bottom: 6.25rem;
+    padding-top: 3.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--fourth-color);
+}
+.project-box img{
+    border-radius: 7.5px;
+}
+.project-card{
+    display: flex;
+     align-items: center;
+}
+.project-card h6{
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--tertiary-color);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.project-card h6:hover{
+    color: var(--secondary-color);
+}
+.project-text{
+    margin: 0 1.25rem;
+}
+.project-text p{
+    color: var(--fifth-color);
+    font-size: 0.9375rem;
+}
+.project-card-2{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.project-card-2 h6{
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--tertiary-color);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.project-card-2 h6:hover{
+    color: var(--secondary-color);
+}
+@media screen and (max-width : 1150px) {
+    .project-box{
+        margin: 0 3.125rem;
+        margin-bottom: 6.25rem;
+    }
+}
+@media screen and (max-width : 850px) {
+    .project-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .project-card{
+        margin-bottom: 1.25rem;
+    }
+    .project-card-2{
+        flex-direction: row;
+    }
+    .project-card-2 .project-text{
+        text-align: left !important;
+    }
+}
+@media screen and (max-width : 540px) {
+    .project-box{
+        margin: 0 1.25rem;
+        margin-bottom: 6.25rem;
+    }
+}
+@media screen and (max-width : 350px) {
+    .project-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .project-card-2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-card-2 .project-text{
+        text-align: center !important;
+    }
+    .project-box img{
+        margin-bottom: 0.9375rem;
+    }
+}

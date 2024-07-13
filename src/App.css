@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=Lato&family=Noto+Sans&family=Oswald:wght@300&family=Poppins&family=Roboto&family=Ubuntu&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+*,
+::after ::before {
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+:root {
+  --primary-color: white;
+  --secondary-color: #ff565b;
+  --tertiary-color: #2a2a2a;
+  --fourth-color: #eeeeee;
+  --fifth-color: #7a7a7a;
+  --before-color: #f6c5c6;
+}
+
+/* *************************one button css************************* */
+
+.all-btn {
+  font-size: 0.875rem;
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 7.5px;
+  padding: 0.6875rem 1.5625rem;
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.all-btn:hover {
+  background-color: var(--tertiary-color);
+}
+
+/* *************************second button css************************* */
+
+.btn-all2 {
+  font-size: 0.875rem;
+  border: none;
+  border-radius: 7.5px;
+  cursor: pointer;
+  color: var(--secondary-color);
+  background: var(--primary-color);
+  padding: 0.6875rem 1.5625rem;
+  transition: all 0.5s;
+}
+.btn-all2:hover {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+/* ******************top background css****************** */
+
+.top-header {
+  background: url("./Assets/images/page-banner-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  padding: 11.25rem 0px;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top-header-box {
+  width: 550px;
+}
+.top-header-box h1 {
+  font-size: 3.125rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  margin-top: 0.9375rem;
+  margin-bottom: 1.5625rem;
+  line-height: 1.2;
+}
+.top-header-box h1 em {
+  font-style: normal;
+  color: var(--secondary-color);
+}
+.top-header-box p {
+  margin-bottom: 1rem;
+  font-size: 0.9375rem;
+  line-height: 1.75rem;
+}
+
+/* ****************Responsive media query of top background**************** */
+
+@media screen and (max-width: 650px) {
+  .top-header-box h1 {
+    margin: 0.9375rem 3.125rem 1.5625rem;
+  }
+  .top-header-box p {
+    margin: auto 3.125rem;
+    margin-bottom: 1rem;
+    text-align: justify;
+  }
+}
+@media screen and (max-width: 540px) {
+  .top-header-box h1 {
+    margin: 0.9375rem 1.25rem 1.5625rem;
+  }
+  .top-header-box p {
+    margin: auto 1.25rem;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  .top-header-box h1 {
+    font-size: 2.5rem;
+  }
+  .top-header-box p {
+    line-height: 1.4;
+  }
+}

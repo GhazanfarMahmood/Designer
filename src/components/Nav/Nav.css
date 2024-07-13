@@ -1,0 +1,132 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.625rem 7.5rem;
+  align-items: center; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.fixed-navbar {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  transition: all 0.4s;
+  padding: 0.625rem 7.5rem;
+  background-color: black;
+}
+.fixed-navbar ul li a {
+    border: none;
+    border-radius: 7.5px;
+    padding: 8px 0.9375rem;
+  }
+nav ul {
+  color: white;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+nav ul li a {
+  margin-left: 1.25rem;
+  padding: 0.75rem 1.25rem;
+  color: var(--primary-color);
+  cursor: pointer;
+  font-size: 0.9375rem;
+  list-style: none;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: var(--secondary-color);
+}
+.active {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-top: 2px solid var(--secondary-color);
+}
+.menu-logo {
+  background-color: var(--primary-color);
+  padding: 0.25rem 0.75rem;
+  color: rgba(0, 0, 0, 0.55);
+  border-color: rgba(0, 0, 0, 0.1);
+  border-radius: 7.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  display: none;
+}
+.material-symbols-outlined {
+  font-size: 2rem;
+}
+
+
+ /* 'ant-drawer-body' classname of the mobile navbar which is drawer  */
+
+
+.ant-drawer-body ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto 3.125rem;
+}
+.ant-drawer-body ul li{
+    list-style: none;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(250, 250, 250, 0.1);;
+    width: 100%;
+    text-align: center;
+}
+.ant-drawer-body ul li a{
+    list-style: none;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    border: none;
+    background-color: transparent;
+}
+.ant-drawer-body ul li a:hover{
+    color: var(--secondary-color);
+}
+.ant-drawer-body .active{
+    color: var(--secondary-color);
+}
+
+
+  /* *************class name of the cross icon in 
+  drawer**************/
+
+
+.anticon{
+    color: var(--primary-color);
+}
+
+@media screen and (max-width : 1150px) {
+    nav{
+        padding: 0.625rem 3.125rem;
+    }
+    .fixed-navbar {
+        padding:  0.625rem 3.125rem;
+    }
+}
+@media screen and (max-width: 1060px) {
+  nav ul {
+    display: none;
+  }
+  .menu-logo {
+    display: block;
+    display: flex;
+  }
+}
+@media screen and (max-width : 540px) {
+  nav{
+    padding: 0.625rem 1.25rem;
+}
+.fixed-navbar {
+    padding:  0.625rem 1.25rem;
+}
+}

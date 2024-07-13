@@ -1,0 +1,213 @@
+.footer-main-container {
+  margin-top: 6.25rem !important;
+  margin: 1.25rem 6.25rem;
+}
+.footer-box {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-box-1 {
+  width: 100%;
+}
+.footer-box-1 img {
+  width: 17.0625rem;
+  margin-bottom: 2.8125rem;
+}
+.footer-box-1 p {
+  font-size: 0.9375rem;
+  line-height: 1.75rem;
+  color: var(--fifth-color);
+  margin-bottom: 1rem;
+}
+.footer-box-2 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.footer-box-2 h4 {
+  margin-bottom: 1.875rem;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.footer-location p {
+  color: var(--fifth-color);
+  font-size: 0.9375rem;
+  line-height: 1.75rem;
+  margin-bottom: 1rem;
+}
+.footer-customer {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+.footer-customer li {
+  margin-bottom: 1.25rem;
+  color: var(--fifth-color);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.footer-customer li:hover {
+  color: var(--secondary-color);
+}
+.footer-logo {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+.footer-logo li {
+  color: var(--fifth-color);
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.25rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.footer-logo li:hover {
+  color: var(--secondary-color);
+}
+.footer-card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+.footer-copyRight {
+  width: 100%;
+  margin-top: 6.25rem;
+  color: var(--fifth-color);
+  font-size: 1rem;
+}
+.footer-copyRight span {
+  color: var(--secondary-color);
+}
+.footer-form {
+  width: 100%;
+}
+.footer-form form {
+  display: flex;
+  flex-direction: column;
+}
+.footer-form form h4 {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 1.875rem;
+}
+.form-submit-btn {
+  display: flex;
+  padding: 0 0.625rem;
+  border-bottom: 1px solid var(--fourth-color);
+  margin-bottom: 1.75rem;
+}
+.form-submit-btn input {
+  width: 100%;
+  font: 0.875rem;
+  height: 2.5rem;
+  border: 0;
+  outline: none;
+  background-color: transparent;
+}
+.form-submit-btn input[tyepe="email"]:focus {
+  background-color: transparent;
+}
+.form-submit-btn button {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s;
+  color: var(--fifth-color);
+  font-size: 1rem;
+}
+.form-submit-btn button span {
+  font-size: 1rem;
+  margin-left: 5px;
+}
+.form-submit-btn button:hover {
+  color: var(--secondary-color);
+}
+.go-btn {
+  margin: auto 6.25rem;
+  margin-bottom: 3.125rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.go-btn button {
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.5s;
+  color: var(--fifth-color);
+  font-size: 1rem;
+}
+.go-btn button span {
+  font-size: 1rem;
+}
+.go-btn button:hover {
+  color: var(--secondary-color);
+}
+
+@media screen and (max-width: 1150px) {
+  .footer-main-container {
+    margin: 3.125rem;
+  }
+  .go-btn {
+    margin: 3.125rem;
+  }
+}
+@media screen and (max-width: 990px) {
+  .footer-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-copyRight {
+    margin-top: 3.125rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer-card {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-copyRight {
+    margin-top: 1.875rem;
+  }
+  .go-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.25rem;
+  }
+}
+@media screen and (max-width: 540px) {
+  .footer-main-container {
+    margin: 3.125rem 1.25rem;
+  }
+  .go-btn {
+    margin: 3.125rem 1.25rem;
+  }
+}
+@media screen and (max-width: 490px) {
+  .footer-box-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-box-2 h4 {
+    margin-bottom: 0.9375rem;
+  }
+  .footer-customer li {
+    margin-bottom: 0.625rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .footer-copyRight {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 322px) {
+  .footer-box-1 img {
+      width:  15rem;
+  }
+}

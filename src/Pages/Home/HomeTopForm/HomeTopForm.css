@@ -1,0 +1,91 @@
+.top-form-container{
+    margin: 0 6.25rem;
+    background-color: var(--primary-color);
+    padding: 3.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -7.5rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-radius: 7.5px;
+}
+.top-form-container form{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5625rem;
+}
+.top-form-box{
+    display: flex;
+    flex-direction: column;
+}
+.top-form-box label{
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+}
+.top-form-box input{
+    height: 2.75rem;
+    border-radius: 7.5px;
+    padding: 0 0.9375rem;
+    margin-bottom: 1.875rem;
+    font-size: 0.875rem;
+    border: 1px solid var(--fourth-color);
+}
+.top-form-box select{
+    height: 2.75rem;
+    border-radius: 7.5px;
+    padding: 0 0.9375rem;
+    margin-bottom: 1.875rem;
+    font-size: 0.875rem;
+    border: 1px solid var(--fourth-color);
+}
+ 
+@media screen and (max-width : 1150px) {
+    .top-form-container{
+        margin: 0 3.125rem;
+        margin-top: -7.5rem;
+    }
+}
+@media screen and (max-width : 990px) {
+    .top-form-container form{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     column-gap: 1.875rem;
+    }
+}
+@media screen and (max-width : 650px) {
+    .top-form-container form{
+     display: grid;
+     grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width : 580px) {
+    .top-form-box label{
+        margin-bottom: 0.9375rem;
+    }
+    .top-form-box input{
+        margin-bottom: 0.9375rem;
+    }
+}
+@media screen and (max-width : 540px) {
+    .top-form-container{
+        margin: 0 1.25rem;
+        margin-top: -7.5rem;
+    }
+}
+@media screen and (max-width : 500px) {
+    .top-form-container{
+        padding: 3.125rem 2.5rem;
+    }
+    .top-form-box label {
+        margin-bottom: 0.625rem;
+    }
+    .top-form-box select{
+        margin-bottom: 0.625rem;
+    }
+}
+@media screen and (max-width : 400px) {
+    .top-form-container{
+        padding: 1.875rem;
+    }
+}

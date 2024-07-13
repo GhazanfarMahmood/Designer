@@ -1,0 +1,32 @@
+.hire-container{
+    background-color: var(--tertiary-color);
+    padding: 2.8125rem 6.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+.hire-container h1{
+    font-size: 2.1875rem;
+   color: var(--primary-color);
+}
+@media screen and (max-width : 1150px) {
+    .hire-container{
+        padding: 2.8125rem 3.125rem;
+    }
+}
+@media screen and (max-width : 850px) {
+    .hire-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .hire-container h1{
+        margin-bottom: 1.25rem;
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width : 540px) {
+    .hire-container{
+        padding: 2.8125rem 1.25rem;
+    }
+}
